@@ -4,8 +4,7 @@
 	<title>Mendokuse's Memory Game</title>
 	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<script src="js/main.js"></script>
-
+	
 </head>
 <body>
 	<header>
@@ -21,16 +20,15 @@
 	<h5>This game is so fun to play! The same classic game you know, but you can still play it even if you don't have any friends!</h5>
 	<p><a href="https://github.com/mendokuse3" target="_blank">Check me out!</a></p>
 
-	<div id="game">
-		<img src="images/back.png" alt="Queen of Diamonds">
-		<img src="images/back.png" alt="Queen of Hearts">
-		<img src="images/back.png" alt="King of Diamonds">
-		<img src="images/back.png" alt="King of Hearts">
-	</div>
+	<div id="game-board" class="board clearfix"></div>
+
 	</main>
 	<footer class="clearfix">
 		<p class="copyright">Copyright 2017</p>
 		<p class="message">Created with &hearts; by <span class="name">GA</span></p>
 	</footer>
+
+<!-- moved script tag from head to address appendChild null issue.  was also able to fix by adding defer at the end of opening script tag -->
+<script src="js/main.js"></script>
 </body>
 </html>
